@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124215559) do
+ActiveRecord::Schema.define(version: 20151124215918) do
 
   create_table "children", force: :cascade do |t|
     t.string   "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20151124215559) do
     t.string   "color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "child_id"
   end
 
 end

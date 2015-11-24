@@ -65,3 +65,11 @@ seed_children = [
 seed_children.each do |child|
   Child.create(child)
 end
+
+seed_toys = [
+  {kind: doll, color: yellow, child_id = 1},
+  {kind: doll, color: yellow, child_id = 1},
+  {kind: doll, color: yellow, child_id = 1},
+
+
+]
