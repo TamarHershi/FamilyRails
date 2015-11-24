@@ -1,3 +1,6 @@
 class MomsController < ApplicationController
-  has_many :children
+
+  def index
+    @moms = Mom.all
+  end
 end
