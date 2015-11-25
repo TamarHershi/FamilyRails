@@ -8,12 +8,11 @@ class ToysController < ApplicationController
     @toy = Toy.find(params[:id])
   end
 
-  def show
-  end
 
   def index
-    get_child
-    @toys = @child.toys
+      get_toy
+      child = Child.find(@toy.child_id)
+      @toys = child.toys
   end
 
   def new
@@ -27,12 +26,12 @@ class ToysController < ApplicationController
   def update
     get_toy
     @toy.update(toy_params[:toy])
-    redirect_to show
+    redirect_to show_toys_children_path(@toy.child_id)
   end
 
   def create
     Toy.create(toy_params[:toy])
-    redirect_to show
+    redirect_to index
   end
 
   private

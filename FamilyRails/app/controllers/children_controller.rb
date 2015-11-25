@@ -12,4 +12,9 @@ class ChildrenController < ApplicationController
     find_child
   end
 
+  def show_toys
+    find_child
+    @toys = @child.toys
+  end
+
 end
