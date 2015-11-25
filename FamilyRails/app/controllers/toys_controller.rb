@@ -8,6 +8,9 @@ class ToysController < ApplicationController
     @toy = Toy.find(params[:id])
   end
 
+  def show
+  end
+
   def index
     get_child
     @toys = @child.toys
