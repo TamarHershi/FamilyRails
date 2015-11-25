@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root 'users#index'
-  
+
   resources :moms do
     resources :children do
+
     end
   end
 
@@ -12,6 +13,10 @@ Rails.application.routes.draw do
   end
 
   resources :users do
+  end
+
+  resources :moms do
+    get 'show_children', action: "show_children", as: "show_children"
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

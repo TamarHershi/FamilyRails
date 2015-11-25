@@ -1,0 +1,8 @@
+<h1> Hi <%= @mom.name %> </h1>
+  <h2>Your profile </h2>
+      <p> you are working as a <%= @mom.job %> </p>
+      <p> you are <%= @mom.age %> years old </p>
+      <p> you have <%= Mom.kids(@mom) %> </p>
+
+<%= link_to "your kids info", mom_show_children_path(@mom.id) %>
+<%= link_to "edit your profile", edit_mom_path %>
