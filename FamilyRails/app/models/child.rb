@@ -19,4 +19,9 @@ class Child < ActiveRecord::Base
     end
   end
 
+  def self.many_siblings(child)
+    mom = Mom.find(child.mom_id)
+    return mom.children.length-1
+  end
+
 end
