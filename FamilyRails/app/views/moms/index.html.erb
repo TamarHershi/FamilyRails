@@ -3,3 +3,5 @@
   <% @moms.each do |mom| %>
     <li><%= link_to mom.name, mom_path(mom.id) %></li>
 <% end %>
+
+<%= link_to "Add a new mom", new_mom_path %>
