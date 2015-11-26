@@ -1,10 +1,11 @@
+<%= link_to "Back to your profile", child_path(@child.id) %>
 <h1>Here are your toys </h1>
 <% @toys.each do |toy| %>
-  <p> The toy is <%= toy.kind %> </p>
+  <h3> <%= toy.kind %> </h3>
   <p> it's color is <%= toy.color %> </p>
   <%= link_to "Edit your toy", edit_child_toy_path(toy.child_id, toy.id) %>
   <%= link_to 'Delete', child_toy_path(toy.child_id, toy.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <% end %>
-
+<br>
 <%= link_to "Add a new toy", new_child_toy_path(@child.id)%>

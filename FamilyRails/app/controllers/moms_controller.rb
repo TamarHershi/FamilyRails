@@ -13,8 +13,8 @@ class MomsController < ApplicationController
   end
 
   def show_children
-    mom = Mom.find(params[:mom_id])
-    @kids = mom.children
+    @mom = Mom.find(params[:mom_id])
+    @kids = @mom.children
   end
 
   def new
