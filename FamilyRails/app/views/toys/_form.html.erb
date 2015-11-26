@@ -3,7 +3,7 @@
   <%= f.text_field :kind, :require => true %>
 	<br>
   <%= f.label :color %>:
-  <%= f.text_field :color %>
+  <%= f.text_field :color, :require => true %>
   <br>
   <% if @toy.kind.nil? %>
     <%= f.hidden_field :child_id, value: @child.id %>

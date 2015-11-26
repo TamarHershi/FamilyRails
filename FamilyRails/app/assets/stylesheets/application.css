@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css?family=Lato|News+Gothic|Inconsolata|Droid+Sans|Raleway|Leckerli+One');
+
+ body {
+   text-align: center;
+   background: rgba(255, 255, 255, .5);
+   font-family: Raleway, sans-serif;
+   width: 100%;
+   margin: auto;
+   font-size: 20px;
+   height: 100%;
+ }
+
+ #footer {
+  margin-left: 400px;
+  position:fixed;
+  bottom:0;
+  left:0;
+ }
+
+ .home {
+   background-image: url('mom_baby3.jpg');
+   background-size: 1550px 1000px;
+  background-repeat: no-repeat;
+ }
+
+ .home_back {
+   padding: 500px;
+   padding-bottom: 50px;
+ }
+
+
+ .button {
+
+ }
