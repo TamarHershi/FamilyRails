@@ -18,7 +18,7 @@ class ChildrenController < ApplicationController
   end
 
   def create
-    Child.create(child_aparms[:id])
+    Child.create(child_params[:child])
     redirect_to mom_show_children_path(params[:child][:mom_id])
   end
 
@@ -28,14 +28,14 @@ class ChildrenController < ApplicationController
       child = Child.find(params[:child_id])
       @toys = child.toys
     else
-    find_child
-    @toys = @child.toys
+      find_child
+      @toys = @child.toys
     end
   end
 
   private
 
-  def child_aparms
+  def child_params
     params.permit(child: [:name, :gender, :age, :mom_id])
   end
 
