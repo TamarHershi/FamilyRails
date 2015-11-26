@@ -48,6 +48,6 @@ class ToysController < ApplicationController
   private
 
   def toy_params
-    params.permit(toy: [:kind, :color])
+    params.permit(toy: [:kind, :color, :child_id])
   end
 end

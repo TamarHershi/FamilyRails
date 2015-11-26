@@ -10,3 +10,5 @@
     <li> He has <%= Child.many_toys(kid) %> </li>
   <% end %>
 <% end %>
+
+<%= link_to "Add a new Child", new_mom_child_path(@mom.id) %>

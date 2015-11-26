@@ -24,4 +24,7 @@ class Child < ActiveRecord::Base
     return mom.children.length-1
   end
 
+  def self.gender
+    return ["male", "feamle"]
+  end
 end
