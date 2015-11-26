@@ -4,6 +4,11 @@
 	<br>
   <%= f.label :color %>:
   <%= f.text_field :color %>
+  <br>
+  <% if @toy.kind.nil? %>
+    <%= f.hidden_field :child_id, value: @child.id %>
+  <% end %>
+
 
   <%= @toy.persisted? ? (f.submit value: "update toy", id: 'special-button') : (f.submit value: "add toy", id: 'special-button') %>
 <% end %>

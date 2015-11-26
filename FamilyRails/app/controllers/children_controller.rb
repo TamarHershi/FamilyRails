@@ -13,8 +13,15 @@ class ChildrenController < ApplicationController
   end
 
   def show_toys
+    if !params[:child_id].nil?
+      child = Child.find(params[:child_id])
+      @toys = child.toys
+    else
     find_child
     @toys = @child.toys
+    end
   end
+
+
 
 end
