@@ -13,7 +13,11 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://fonts.googleapis.com/css?family=Lato|News+Gothic|Inconsolata|Droid+Sans|Raleway|Leckerli+One');
+
+ a { color: #FF0099}
+ a.visited, a.hover {color: #1abcde;}
+
+ a.special {color:#123456;}
 
  body {
    text-align: center;
@@ -26,7 +30,9 @@
  }
 
  #footer {
-  margin-left: 400px;
+  font-size: 15px;
+  margin-left: 500px;
+  text-align: center;
   position:fixed;
   bottom:0;
   left:0;
@@ -34,16 +40,52 @@
 
  .home {
    background-image: url('mom_baby3.jpg');
-   background-size: 1550px 1000px;
+   background-size: 1550px 900px;
   background-repeat: no-repeat;
  }
 
  .home_back {
    padding: 500px;
-   padding-bottom: 50px;
  }
 
+ .mom {
+   background-image: url('mom.png');
+   background-repeat: no-repeat;
+   margin-left: 300px;
+ }
+
+ .mom h2 {
+   margin-top: 300px;
+ }
 
  .button {
+   margin-bottom: 100px;
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
- }
+.button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
