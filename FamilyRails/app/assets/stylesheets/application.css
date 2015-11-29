@@ -38,6 +38,12 @@
   left:0;
  }
 
+ table {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 40px;
+ }
+
  .home {
    background-image: url('mom_baby3.jpg');
    background-size: 1550px 900px;
