@@ -1,5 +1,7 @@
 class ChildrenController < ApplicationController
 
+  before_action :find_child, only: [:show]
+
   def find_child
     @child = Child.find(params[:id])
   end
@@ -9,7 +11,6 @@ class ChildrenController < ApplicationController
   end
 
   def show
-    find_child
   end
 
   def new

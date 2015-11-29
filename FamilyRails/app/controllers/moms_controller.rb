@@ -1,5 +1,7 @@
 class MomsController < ApplicationController
 
+  before_action :find_mom, only: [:show, :edit, :update]
+
   def find_mom
     @mom = Mom.find(params[:id])
   end
@@ -9,7 +11,6 @@ class MomsController < ApplicationController
   end
 
   def show
-    find_mom
   end
 
   def show_children
@@ -22,7 +23,6 @@ class MomsController < ApplicationController
   end
 
   def edit
-    find_mom
   end
 
   def create
@@ -31,7 +31,6 @@ class MomsController < ApplicationController
   end
 
   def update
-    find_mom
     @mom.update(mom_params[:mom])
     redirect_to show
   end

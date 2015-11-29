@@ -1,5 +1,8 @@
 class ToysController < ApplicationController
 
+  before_action :get_toy, only: [:index, :edit, :update]
+  before_action :get_child, only: [:new]
+
   def get_child
     @child = Child.find(params[:child_id])
   end
@@ -10,22 +13,15 @@ class ToysController < ApplicationController
 
 
   def index
-    # if !params[:child_id].nil?
-    #   child = Child.find(params[:child_id])
-    #   @toys = child.toys
-    # else
-      get_toy
       child = Child.find(@toy.child_id)
       @toys = child.toys
   end
 
   def new
     @toy = Toy.new
-    @child = Child.find(params[:child_id])
   end
 
   def edit
-    get_toy
   end
 
   def destroy
@@ -34,7 +30,6 @@ class ToysController < ApplicationController
   end
 
   def update
-    get_toy
     @child = Child.find(@toy.child_id)
     @toy.update(toy_params[:toy])
     redirect_to show_toys_children_path(@child.id)
