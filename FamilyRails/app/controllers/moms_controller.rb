@@ -7,7 +7,7 @@ class MomsController < ApplicationController
   end
 
   def index
-    @moms = Mom.all
+    @moms = Mom.all.sort_by{|e| e[:name]}
   end
 
   def show
@@ -15,7 +15,7 @@ class MomsController < ApplicationController
 
   def show_children
     @mom = Mom.find(params[:mom_id])
-    @kids = @mom.children
+    @kids = @mom.children.sort_by{|e| e[:name]}
   end
 
   def new
