@@ -1,4 +1,4 @@
-== README
+README
 
 This application has 3 models : mom, child and toy.
 a mother can have many (or none) children, and a child can have many toys.
@@ -16,3 +16,7 @@ As a child you can:
 * see how many sinlings you have
 * watch your toys list
 * add/ delete/ edit a toy
+
+Notes: 
+* You can't delete a mom or a child! But you can delete a toy (as a child ) :) 
+* a child can't add a new child - only his mother can (Dah! ;) ) . But he can add a new toy.
