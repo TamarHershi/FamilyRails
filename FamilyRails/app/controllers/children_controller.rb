@@ -27,10 +27,10 @@ class ChildrenController < ApplicationController
   def show_toys
     if !params[:child_id].nil?
       child = Child.find(params[:child_id])
-      @toys = child.toys
+      @toys = child.toys.sort_by{|e| e[:kind]}
     else
       find_child
-      @toys = @child.toys
+      @toys = @child.toys.sort_by{|e| e[:kind]}
     end
   end
 
