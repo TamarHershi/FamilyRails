@@ -1,7 +1,7 @@
 <%= link_to "back to your Profile", mom_path(@mom.id) %>
 <h1> here are your kids </h1>
 <% @kids.each do |kid| %>
-  <p> Child Name: <%= kid.name %> </p>
+  <p class="head"> Child Name: <%= kid.name %> </p>
   <% if Child.girl?(kid) %>
     <li> She is <%= kid.age %> years old </li>
     <li> She has <%= Child.many_toys(kid) %> </li>
