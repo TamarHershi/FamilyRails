@@ -1,7 +1,10 @@
-<h1> Hi child!</h1>
-<h2>Please let us know who you are</h2>
-<p> If you want a sister, ask your mother to add a new child</p>
-
-<% @children.each do |child| %>
-  <li><%= link_to child.name, child_path(child.id) %></li>
-<%end %>
+<div id="show_child">
+  <h1> Hi child!</h1>
+  <!-- <%= image_tag("Children", width: '1050', id: "kids_image") %> -->
+  <h2 class="head">Choose your name from the list</h2>
+  <div id="kids_list">
+    <% @children.each do |child| %>
+      <li><%= link_to child.name, child_path(child.id) %></li>
+    <%end %>
+  </div>
+</div>

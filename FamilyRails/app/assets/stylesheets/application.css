@@ -44,6 +44,11 @@
    margin-top: 40px;
  }
 
+ #kids_image {
+   margin-top: -27px;
+}
+ }
+
  .mom_d {
    text-align: left;
  }
@@ -62,6 +67,16 @@
    padding: 100px;
  }
 
+#show_child {
+  background-image: url('Children.jpg');
+  background-size: 1000px;
+ background-repeat: no-repeat;
+ }
+#kids_list {
+  margin-top: 300px;
+}
+
+}
  .head {
    font-size: 25px;
    font-family: fantasy;
@@ -71,11 +86,11 @@
 
 
 
- .mom {
+ /*.mom {
    background-image: url('mom.png');
    background-repeat: no-repeat;
    margin-left: 300px;
- }
+ }*/
 
  .mom h2 {
    margin-top: 300px;
