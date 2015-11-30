@@ -44,6 +44,14 @@
    margin-top: 40px;
  }
 
+ .mom_d {
+   text-align: left;
+ }
+
+ .mom_d {
+   margin-left: 550px;
+ }
+
  .home {
    background-image: url('mom_baby3.jpg');
    background-size: 1550px 900px;
@@ -51,8 +59,10 @@
  }
 
  .home_back {
-   padding: 500px;
+   padding: 100px;
  }
+
+
 
  .mom {
    background-image: url('mom.png');
@@ -62,6 +72,10 @@
 
  .mom h2 {
    margin-top: 300px;
+ }
+
+ h1 {
+   color: purple;
  }
 
  .button {
@@ -91,6 +105,11 @@
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+.bottom_link {
+  margin-top: 100px;
+}
+
 
 li {
   list-style-type: none;

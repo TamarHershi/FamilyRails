@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application has 3 models : mom, child and toy.
+a mother can have many (or none) children, and a child can have many toys.
 
-Things you may want to cover:
+As a mother you can:
+* choose who you are from the list (sorted list)
+* make a new mom
+* see your profile (your # of kids, age, job and name) / edit your profile
+* see your children list
+* add a new child
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+As a child you can:
+* choose who you are from the list
+* see your profile (gender, name and age)
+* see your toys list
+* add a new toy / delete a toy / edit a toy
