@@ -11,5 +11,12 @@ class Mom < ActiveRecord::Base
     end
   end
 
+  def self.check_kids(mom)
+    if @mom.kids!= 0
+      return true
+    end
+  end
+
+
 
 end
