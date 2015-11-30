@@ -13,5 +13,6 @@ As a mother you can:
 As a child you can:
 * choose who you are from the list
 * see your profile (gender, name and age)
-* see your toys list
-* add a new toy / delete a toy / edit a toy
+* see how many sinlings you have
+* watch your toys list
+* add/ delete/ edit a toy
