@@ -1,5 +1,5 @@
 <h1> Hi <%= @child.name %>! </h1>
-  <h2> Your profile </h2>
+  <h2 class="head"> Your profile </h2>
   <div class="child">
   <% if Child.girl?(@child) %>
     <p> you are a sweet <%=@child.age %> years old girl  </p>
@@ -10,4 +10,4 @@
   <p> you have <%= Child.many_siblings(@child) %> siblings </p>
 </div class="child">
 
-  <%= link_to "your toys info", show_toys_children_path %>
+<%= link_to "your toys info", show_toys_children_path %>

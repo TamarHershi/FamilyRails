@@ -42,12 +42,17 @@
    margin-left: auto;
    margin-right: auto;
    margin-top: 40px;
+   width: 100%;
  }
 
+ th {
+     height: 50px;
+ }
+ 
  #kids_image {
    margin-top: -27px;
 }
- }
+
 
  .mom_d {
    text-align: left;
@@ -69,28 +74,20 @@
 
 #show_child {
   background-image: url('Children.jpg');
-  background-size: 1000px;
+  background-size: 1400px;
  background-repeat: no-repeat;
  }
+
 #kids_list {
-  margin-top: 300px;
+  margin-top: 450px;
 }
 
-}
- .head {
+ .head  {
    font-size: 25px;
    font-family: fantasy;
    text-decoration: underline;
    margin-top: 75px;
  }
-
-
-
- /*.mom {
-   background-image: url('mom.png');
-   background-repeat: no-repeat;
-   margin-left: 300px;
- }*/
 
  .mom h2 {
    margin-top: 300px;
