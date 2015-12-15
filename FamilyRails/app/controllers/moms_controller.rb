@@ -1,4 +1,5 @@
 class MomsController < ApplicationController
+  layout "check"
 
   before_action :find_mom, only: [:edit, :update]
 
